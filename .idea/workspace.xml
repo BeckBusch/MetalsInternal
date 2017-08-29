@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc623a-0deb-4507-bfca-2bf987b5b1c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/snippets.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -218,7 +214,7 @@
       <workItem from="1503627596376" duration="6813000" />
       <workItem from="1503704983832" duration="860000" />
       <workItem from="1503795106847" duration="3553000" />
-      <workItem from="1503962680504" duration="2233000" />
+      <workItem from="1503962680504" duration="2278000" />
     </task>
     <task id="LOCAL-00001" summary="testing">
       <created>1503619648107</created>
@@ -227,11 +223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503619648107</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="filled out the tabeles and added support for switching table views">
+      <created>1503964960395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1503964960395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18309000" />
+    <option name="totallyTimeSpent" value="18354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -266,7 +269,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing" />
+    <MESSAGE value="filled out the tabeles and added support for switching table views" />
+    <option name="LAST_COMMIT_MESSAGE" value="filled out the tabeles and added support for switching table views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
