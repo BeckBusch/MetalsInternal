@@ -1,0 +1,14 @@
+    <tr>
+        <th class="animated slideInLeft"><img src=""></th>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+    </tr>
+    <tr>
+        <th class="animated slideInLeft"><img src=""></th>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+        <td class="animated slideInRight"><p></p></td>
+    </tr>
