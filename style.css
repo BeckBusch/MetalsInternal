@@ -8,7 +8,6 @@ tr:nth-of-type(2) td {
     padding: 0px;
 }
 table {
-    background-color: #005aa2;
 }
 img {
     max-width: 100%;
@@ -16,11 +15,15 @@ img {
     display: -webkit-inline-box;
 }
 td, th {
-    background-image: url("organic-tiles.png");
+  /*  background-image: url("organic-tiles.png"); */
     overflow: hidden;
-    border-radius: 1.5em;
+    /*border-radius: 1.5em;*/
     width: 20%;
     /*border: #005aa2 1px solid;*/
+}
+body {
+    background-image: url("organic-tiles.png");
+    overflow-x: hidden
 }
 p {
     width: 100%;
@@ -30,6 +33,6 @@ p {
 }
 
 .image {
-    border-radius: 1.5em;
+    /*border-radius: 1.5em;*/
     overflow: hidden;
 }

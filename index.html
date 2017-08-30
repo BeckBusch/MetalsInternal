@@ -7,14 +7,14 @@
     <script src="script.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="animate.css">
 </head>
-<body>
+<body onload="loaded()">
 <table id="achived">
     <tr>
+        <td class="animated slideInDown"></td>
         <th class="animated slideInDown"><a onclick="achived()"><h1>Information</h1></a></th>
-        <td class="animated slideInDown"><a onclick="merit()"><h1>Uses</h1></a></td>
-        <td class="animated slideInDown"></td>
-        <td class="animated slideInDown"></td>
-        <td class="animated slideInDown"></td>
+        <td class="animated slideInDown"><a onclick="detail()"><h1>Detail</h1></a></td>
+        <td class="animated slideInDown"><a onclick="uses()"><h1>Usage</h1></a></td>
+
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src=""></th>
@@ -121,13 +121,12 @@
         </p></td>
     </tr>
 </table>
-<table id="merit" style="display:none;">
+<table id="detail" style="display:none;">
     <tr>
+        <td class="animated slideInDown"></td>
         <th class="animated slideInDown"><a onclick="achived()"><h1>Information</h1></a></th>
-        <td class="animated slideInDown"><a onclick="merit()"><h1>Uses</h1></a></td>
-        <td class="animated slideInDown"></td>
-        <td class="animated slideInDown"></td>
-        <td class="animated slideInDown"></td>
+        <td class="animated slideInDown"><a onclick="detail()"><h1>Detail</h1></a></td>
+        <td class="animated slideInDown"><a onclick="uses()"><h1>Usage</h1></a></td>
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src=""></th>
@@ -138,100 +137,81 @@
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src="oxygen.png"></th>
-        <td class="animated slideInRight"><p>
-            Gold does not react with oxygen at any temperature.
+        <td class="animated slideInRight" colspan="2"><p>
+            Silver actually conducts electricity better than gold does. The reason why gold is used in electronics is because silver tarnishes easily while gold does not react with oxygen at all.
         </p></td>
-        <td class="animated slideInRight"><p>
-            While silver does not react with oxygen, it reacts with sulfur and sulfuric compounds in the air to form black silver sulfide. This is commonly known as tarnishing.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Copper reacts with oxygen in the air to form a layer of dark brown copper oxide. Unlike iron oxide, or rust, this layer of oxide protects the rest of the copper from reacting with more oxygen.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Aluminium quickly reacts with oxygen to form a surface layer of aluminium oxide. Like copper, this also protects the rest of the metal from further reaction.
-        </p></td>
-    </tr>
-    <tr>
-        <th class="animated image slideInLeft"><img src="acid.png"></th>
-        <td class="animated slideInRight"><p>
-            Gold is unaffected by most acids. However it does react with selenic acid and can be dissolved in aqua regia. Aqua regia is a 1:3 mix of nitric acid and hydrochloric acid.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            While silver is not attacked by most acids, hot sulfuric acid in high concentrate or somewhat concentrated nitric acid will dissolve silver.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Copper tarnishes when exposed to some sulfur compounds, with which it reacts to form various copper sulfides.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Aluminum can react with dilute sulfuric, hydrochloric and nitric acid to make hydrogen gas and aluminium sulfate, chloride or nitrate respectively.
-        </p></td>
-    </tr>
-    <tr>
-        <th class="animated image slideInLeft"><img src="465324137.png"></th>
-        <td colspan="3  " class="animated slideInRight"><p>Gold, Silver, and Copper do not react with water.</p></td>
-        <td class="animated slideInRight"><p>
-            Aluminium is oxidized by water at temperatures above 280 °C.
-        </p></td>
-    </tr>
-    <tr>
-        <th class="animated image slideInLeft"><img src="density.png"></th>
-        <td class="animated slideInRight"><p>
-            Gold has a high density of 19.30 g/cm3. This makes it a very heavy metal.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Silver has a medium density of 10.49 g/cm3. This makes it heavy, but only half as much as gold.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Copper is slightly heavy with a density of 8.96 g/cm3 but is on the lighter side compared to most metals.
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Aluminium is a very light metal with a density of 2.698 g/cm3.
+        <td colspan="2" class="animated slideInRight"><p>
+            Copper and aluminium both form oxide layers but because the layers stop at the surface and protect the rest of the metal from oxidation, this doesn't matter. Their uses in industry do not require the oxide layer to be removed (except for aluminium maybe sometimes) so this property does not affect their usage.
         </p></td>
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src="ductility.png"></th>
         <td class="animated slideInRight"><p>
-            Gold is the most ductile metal that we know.
+            The ductility of gold makes it perfect for drawing out into tiny thin wires to use in electronics
         </p></td>
         <td class="animated slideInRight"><p>
-            Silver is the second most ductile metal that we know of.
         </p></td>
         <td class="animated slideInRight"><p>
-            Copper has a high ductility compared to most metals.
+            Coppers high ductility is also used to draw it out for use in electrical wires. With a 100% electrical conductivity, copper is perfect for electrical wires.
         </p></td>
         <td class="animated slideInRight"><p>
-            Aluminium has an average ductility.
         </p></td>
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src="malleability.png"></th>
         <td class="animated slideInRight"><p>
-            Out of all the common metals and alloys, gold is the most mallabel.
+            The high malleability of gold is where the stereotype of biting a gold nugget comes from. It is easy to manipulate for jewelry but is affected by work hardening. Work hardening means that after being bent and formed, gold can become hard and brittle. This is solved by heating it up and letting it cool.
         </p></td>
         <td class="animated slideInRight"><p>
-            Compared to most common metals and alloys, silver is the second most malleable under gold.
+        </p></td>
+        <td class="animated slideInRight"  colspan="2"><p>
+            The malleability of copper and aluminium allows them to be formed into large sheets. For aluminium, among other things, this is used to create the rolls of aluminum that become beverage cans.
         </p></td>
         <td class="animated slideInRight"><p>
-            Copper is the fourth most malleable metal
-        </p></td>
-        <td class="animated slideInRight"><p>
-            Aluminium is the third most malleable metal.
         </p></td>
     </tr>
     <tr>
         <th class="animated image slideInLeft"><img src="color.png"></th>
         <td class="animated slideInRight"><p>
-            Gold is a shiny metallic yellow. It has been so prominent throughout human history it has defined its own color as gold.
+            The shiny color of gold has been an attraction and a symbol of wealth for a long time. This makes it perfect for use in jewelry as its shine is unmatched.
         </p></td>
         <td class="animated slideInRight"><p>
-            Silver reflects all visible frequencies of light as it absorbs near-ultraviolet light. Like gold this prominent shine has led to silver naming itself.
+            Because silver absorbs frequencies in the near ultraviolet range, its electrons get excited and give silver a beautiful shine. This makes it look
         </p></td>
         <td class="animated slideInRight"><p>
-            Copper is a peachy pink color. When oxidised, it becomes a dull brown.
         </p></td>
         <td class="animated slideInRight"><p>
-            Aluminium is a reflective silvery color but aluminium oxide, which forms very fast on silver, is a whiteish gray. Due to the oxide this is the color we see the most.
         </p></td>
+    </tr>
+</table>
+<table style="margin-left:1em;" id="uses">
+    <tr>
+        <th class="animated slideInDown"><a onclick="achived()"><h1>Information</h1></a></th>
+        <td class="animated slideInDown"><a onclick="detail()"><h1>Detail</h1></a></td>
+        <td class="animated slideInDown"><a onclick="uses()"><h1>Usage</h1></a></td>
+    </tr>
+    <tr>
+        <td class="animated image slideInRight"><img src="79-Gold-Tile.png"></td>
+        <td class="animated image slideInRight"><img src="47-Silver-Tile.png"></td>
+        <td class="animated image slideInRight"><img src="29-Copperl-Tile.png"></td>
+    </tr>
+    <tr>
+        <td class="animated slideInRight"><p>
+            Gold is frequently used in electronics because of a number of its properties. The first is its high electrical conductivity. The conductivity of gold is so high that it is used as a reference point for other metals. A common measure of conductivity is a percentage of how conductive gold is. The second property is its ductility. Gold has the highest ductility of most other metals and this allows it to be drawn out into very small and thin wires. This is essential as gold is very expensive. The third property is its reactivity. Gold does not react with oxygen or water meaning that exposure to earth atmosphere will not degrade the circuit over time.
+        </p></td>
+        <td class="animated slideInRight"><p>
+            Although silver is not used in electronics, it matches gold in almost all of its properties. It is more conductive than gold, just as ductile, and just as malleabile. The problem with silver is that it reacts with sulfuric compounds in earth's atmosphere to form a tarnish and degrade. This means that it can't be used in electronics as the tarnish and degradation would render the circuit useless.
+        </p></td>
+        <td class="animated slideInRight"><p>
+            Copper is the most common conductor used in electronics. Its high ductility makes it easy to form into wires and its malleability allows it to be flattened into contact pads or electrodes while retaining its shape and not breaking under stress.. Although it forms copper oxide in air, this does not degrade the metal or damage its integrity because the oxide only forms a surface layer. This combined with its low cost and high abundance makes it the best choice for electrical cabling and wires.
+        </p></td>
+    </tr>
+    <tr>
+        <td class="animated slideInRight" colspan="3">
+            <p>
+
+            </p>
+        </td>
     </tr>
 </table>
 </body>
